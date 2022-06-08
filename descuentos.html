@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./descuentos.css">
+    <title>Porcentajes y descuentos</title>
+    
+</head>
+<body>
+    <ul class="nav">
+        <li class="liFiguras"> <a href="./figuras.html">Proyecto 1</a> </li>
+        <li class="liTendencia"> <a href="./tendenciaCentral.html">Proyecto 3</a> </li>
+        <li class="liDescuentos"> <a href="./descuentos.html">Proyecto 2</a></li>
+        <li class="liHome"><a href="./index.html">Sobre mí</a></li>
+
+    </ul>
+
+    <section class="contenidoPrincipal">
+    <form class="formulario1"action="">
+
+        <h3 class="titulo1">Descuento</h3> 
+
+        <div class="containerInput1">
+        <span for=>Ingrese el precio del producto</span>
+        <input id="precioProducto"type="number" placeholder="Ejemplo:1250">
+        </div>
+
+        <div class="containerInput2">
+        <span>Ingrese el descuento a aplicar</span>
+        <input id="descuento" type="number" placeholder="Ejemplo:20">
+        </div>
+
+        <button type="button" onclick="calcularPrecioConDescuento()">Calcular el precio con descuento</button>
+        <p id="resultado"></p>
+
+    </form>
+
+    
+        <form class="formulario2"action="">
+
+            <h3 class="titulo2">Descuento con cupón</h3>
+
+            <div class="containerInput3">
+            <span>Ingrese el precio del producto</span>
+            <input type="text" id="precioProducto2" placeholder="Ejemplo:1250">
+            </div>
+
+            <div class="containerInput4">
+            <span>Ingrese el código del cupón</span>
+            <input type="number" id="codigoCupon" placeholder="Ejemplo:1038866085">
+            </div>
+            
+            <button type="button" onclick="calcularDescuentoConCupon()">Calcular el precio con descuento mediante cupón</button>
+
+            <p id="resultado2"></p>
+        
+            <h2>Cupones válidos:</h2>
+            <ul>
+                <li>1038866085</li>
+                <li>5689191415</li>
+                <li>3133701667</li>
+                <li>5972500</li>
+                <li>3053598988</li>
+            </ul>
+        </form>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

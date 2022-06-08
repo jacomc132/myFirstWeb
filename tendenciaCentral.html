@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tendenciaCentral.css">
+    <title>Tendencia central</title>
+</head>
+<body>
+    <ul class="nav">
+        <li class="liFiguras"> <a href="./figuras.html">Proyecto 1</a> </li>
+        <li class="liTendencia"> <a href="./tendenciaCentral.html">Proyecto 3</a> </li>
+        <li class="liDescuentos"> <a href="./descuentos.html">Proyecto 2</a></li>
+        <li class="liHome"><a href="./index.html">Sobre mí</a></li>
+
+    </ul>
+    <section class="contenidoPrincipal">
+    <h1 class="titulo1">Promedio, mediana y moda</h1>
+
+    <form class="formulario"action="">
+        <h3>Ingrese una lista de números</h3>
+        <p>Digite números y agréguelos en la lista presionando el botón agregar.</p>
+        <input id="inputLista"type="number" placeholder="Inserte número...">
+        <button type="button" class="botonAgregar" onclick="agregarNumerosLista()">Agregar</button>
+        <button type="button" class="botonQuitar" onclick="quitarNumeroLista()">Eliminar</button>
+        <p id="listaActual">Tu lista es= []</p>
+        <p id="listaOrdenada"></p>
+
+    </form>
+    
+    <button class="botonCalcular"type="button" onclick="calcularTendenciaCentral()">Calcular</button>
+    
+
+    <section class="sectionPromedio">
+        <h4>Promedio</h4>
+        <p id="resultadoPromedio"></p>
+    </section>
+
+    <section class="sectionMediana">
+        <h4>Mediana</h4>
+        <p id="resultadoMediana"></p>
+    </section>
+
+    <section class="sectionModa">
+        <h4>Moda</h4>
+        <p id="modaResult"></p>
+    </section>
+
+    <section class="sectionRepeticionModa">
+        <h4>Repeticiones moda</h4>
+        <p id="resultadoRepeticiones"></p>
+    </section>
+    
+        
+    
+
+    <script src="./tendenciaCentral.js"></script>
+</body>
+</section>
+</html>

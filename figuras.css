@@ -1,0 +1,99 @@
+:root{
+    --color-1:#97c5db;
+    --color-2:#006bac;
+    --color-3:#4597c3;
+    --color-4:#662a22;
+    --color-5:#2e000f;  
+}
+body{
+    padding: 0%;
+    border:0ch;
+    margin: 0%;
+    background-color: var(--color-1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenidoPrincipal{
+    width:60vw;
+    height:1000px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+
+/* Código de la nav y demás generalidades: */
+.nav{
+    width:100vw;
+    height:80px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:var(--color-2);
+
+}
+
+.liFiguras{
+    grid-column:2/3;
+    width:100px;
+    grid-row: 2/3;
+    list-style: none;
+   
+}
+.liHome{
+    
+    grid-column:1/2;
+    width:100px;
+    list-style: none;
+    grid-row: 2/3;
+}
+.liDescuentos{
+    grid-column:3/4;
+   
+    width: 100px;
+    list-style: none;
+    grid-row: 2/3;
+
+}
+.liTendencia{
+    grid-column:4/5;
+    width: 150px;
+    list-style: none;
+    grid-row: 2/3;
+    
+}
+a{
+    text-decoration: none;
+    font-size: large;
+    color:var(--color-5)
+    
+    
+}
+
+a:hover{
+    text-decoration: none;
+    font-size: large;
+    color:white;
+}
+
+p{
+color:var(--color-3);
+}
+
+h1{
+    color:var(--color-5);
+}
+h2{
+    color:var(--color-5);
+}
+h3{
+    color:var(--color-5);
+}
+h4{
+    color:var(--color-5);
+}
+h5{
+    color:var(--color-5);
+}
+h6{
+    color:var(--color-5);
+}
