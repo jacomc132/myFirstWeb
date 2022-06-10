@@ -50,19 +50,28 @@ function perimetroTrianguloIso(lado1Triangulo,lado2Triangulo,baseTriangulo){
 
 //Cuadrado
 function calcularPerimetroCuadrado(){
+    
     const input= document.getElementById("inputCuadrado");
     const value=input.value;
-
+    if(value){
     const perimetro=perimetroCuadrado(value);
-    alert(perimetro);
+    alert(perimetro);}
+    else{
+        alert("Porfavor inserte un valor");
+    }
 }
 
 function calcularAreaCuadrado(){
     const input=document.getElementById("inputCuadrado");
     const value=input.value;
 
+    if(value){
     const area=areaCuadrado(value);
-    alert(area);
+    alert(area);}
+    else{
+        alert("Porfavor inserte un valor");
+    }
+
 }
 
 //Triángulo 
@@ -76,9 +85,12 @@ function calcularPerimetroTriangulo(){
 
     const input3=document.getElementById("input3Triangulo");
     const value3=parseInt(input3.value);
-
+    if(value1 && value2 && value3){
     const perimetro=perimetroTriangulo(value1,value2,value3);
-    alert(perimetro);
+    alert(perimetro);}
+    else{
+        alert("Falta uno o más valores, para calcular el perímetro se necesita el lado1, lado2 y la base");
+    }
 }
 
 function calcularAreaTriangulo(){
@@ -87,8 +99,13 @@ function calcularAreaTriangulo(){
     const input4=document.getElementById("input4Triangulo");
     const heightTriangulo=parseInt(input4.value);
 
+
+    if(heightTriangulo && baseTriangle){
     let area=areaTriangulo(baseTriangle,heightTriangulo);
-    alert(area);
+    alert(area);}
+    else{
+        alert("Falta uno o más valores, para calcular el área se necesita base y altura");
+    }
 
 
 }
@@ -104,9 +121,13 @@ function calcularPerimetroTrianguloIso(){
 
     const input3=document.getElementById("input3TrianguloIso");
     const value3=parseInt(input3.value);
-
+    if(value1 && value2 && value3){
     const perimetro=perimetroTrianguloIso(value1,value2,value3);
     alert(perimetro);
+}
+    else{
+        alert("Faltan uno o más valores, para calcular el perímetro de un triángulo isosceles se necesita el lado1, lado2 y la base.");
+    }
 }
 
 function calcularAlturaTrianguloIso(){
@@ -116,12 +137,17 @@ function calcularAlturaTrianguloIso(){
     const value2=parseInt(input2.value);
     const input3=document.getElementById("input3TrianguloIso");
     const value3=parseInt(input3.value);
-    if(value1==value2){
+    if(value1 && value2 && value3){
+        if(value1==value2){
         let alturaTrianguloIso=Math.sqrt((value1*value1)-((value3/2)*(value3/2)));
         alert(alturaTrianguloIso);
+        }
+        else if(value1!=value2){
+        alert("Para que sea isosceles, el lado1 y lado2 deben ser iguales");
+        }
     }
     else{
-        alert("Para que sea isosceles, el lado1 y lado2 deben ser iguales");
+        alert("Faltan uno o más valores, para calcular la altura de un triángulo isosceles se necesita el lado1, lado2 y la base.")
     }
 }
 

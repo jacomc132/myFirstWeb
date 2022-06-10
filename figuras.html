@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./figuras.css">
-    <title>Figuras geometricas | curso practico de javascript</title>
+    <title>Figuras geometricas</title>
 </head>
 <body>
     
@@ -17,72 +17,74 @@
 
     </ul>
     <section class="contenidoPrincipal">
-  <header>
-      <h1>
+  
+      <h1 class="tituloPrincipal">
           Figuras geométricas
       </h1>
-  </header>
+  
 
-  <section>
+  <section class="contenedorCuadrado">
       
-      <h2>Cuadrado</h2>
+      
 
-      <form action="">
-            <label for="inputCuadrado">Ingresa la longitud de un lado</label>
-            <input id="inputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+      <form action="" class="formulario1">
+        <h2 class="tituloCuadrado">Cuadrado</h2>
+            <p class="labelCuadrado">Longitud de un lado:</p>
+            <input id="inputCuadrado" type="number" placeholder="Ejemplo:24">
+            <button class="botonPerimetroCuadrado"type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+            <button class="botonAreaCuadrado"type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
           
       </form>
 
   </section>
 
 
-  <section>
+  <section class="contenedorTriangulo">
         
-        <h2>Triángulo</h2>
+        
 
-        <form action="">
-            <label for="input1Triangulo">Lado 1</label>
-            <input id="input1Triangulo" type="number">
+        <form action="" class="formulario2">
+            <h2 class="tituloTriangulo">Triángulo</h2>
+            <p class="label1Triangulo">Lado 1</p>
+            <input id="input1Triangulo" type="number" placeholder="Ejemplo:10">
 
-            <label for="input2Triangulo">Lado 2</label>
-            <input id="input2Triangulo" type="number">
+            <p class="label2Triangulo">Lado 2</p>
+            <input id="input2Triangulo" type="number" placeholder="Ejemplo:6">
 
-            <label for="input3Triangulo">Base</label>
-            <input id="input3Triangulo" type="number">
+            <p class="label3Triangulo">Base</p>
+            <input id="input3Triangulo" type="number" placeholder="Ejemplo:8">
 
-            <label for="input4Triangulo">Altura</label>
-            <input id="input4Triangulo" type="number">
+            <p class="label4Triangulo">Altura</p>
+            <input id="input4Triangulo" type="number" placeholder="Ejemplo:6">
+           
 
-            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+            <button class="boton1Triangulo" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+            <button class="boton2Triangulo" type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
           
       </form>
     </section>
 
 
 
-  <section>
+  <section class="contenedorIso">
     
-    <h2>Triángulo isosceles</h2>
+    
 
-    <form action="">
-        <label for="input1TrianguloIso">Lado 1</label>
-        <input id="input1TrianguloIso" type="number">
+    <form action="" class="formulario3">
+        <h2 class="tituloIso">Triángulo isosceles</h2>
+        <p class="label1Iso">Lado 1</p>
+        <input id="input1TrianguloIso" type="number" placeholder="Ejemplo:12">
 
-        <label for="input2TrianguloIso">Lado 2</label>
-        <input id="input2TrianguloIso" type="number">
+        <p class="label2Iso">Lado 2</p>
+        <input id="input2TrianguloIso" type="number" placeholder="Ejemplo:12">
 
-        <label for="input3TrianguloIso">Base</label>
-        <input id="input3TrianguloIso" type="number">
+        <p class="label3Iso">Base</p>
+        <input id="input3TrianguloIso" type="number" placeholder="Ejemplo:10">
 
-        <label for="input4TrianguloIso">Altura</label>
-        <input id="input4TrianguloIso" type="number">
+        
 
-        <button type="button" onclick="calcularPerimetroTrianguloIso()">Calcular el perímetro</button>
-        <button type="button" onclick="calcularAreaTrianguloIso()">Calcular el área</button>
-        <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular altura</button>
+        <button class="boton1Iso"type="button" onclick="calcularPerimetroTrianguloIso()">Calcular el perímetro</button>
+        <button class="boton2Iso"type="button" onclick="calcularAlturaTrianguloIso()">Calcular altura</button>
       
   </form>
 </section>
